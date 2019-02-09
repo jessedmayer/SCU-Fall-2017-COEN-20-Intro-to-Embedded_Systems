@@ -1,0 +1,33 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+Read all of Chapters 11 and 12.
+
+Chapter 11: Do problems 1 and 3. For problem 3, you only need to write the assembly language function. You do not need to measure its execution time. 
+
+Chapter 12: Problem 4 asks you to create functions in assembly to perform addition, subtraction, multiplication and division of complex numbers. Since C doesn't natively support complex numbers, it suggests using a 64-bit integer as a container to hold two 32-bit floats -one for the real part and one for the imaginary part of a complex number, as in:
+
+     typedef uint64_t COMPLEX ;
+
+However, this means that when you pass a complex number to a function, the compiler really thinks it is passing a 64-bit integer and thus does so using a pair of integer registers like R0 and R1. It also means that functions that return a complex number must leave the result in R0 and R1. That wouldn't be so bad except that it would require using VMOV instructions to copy the values into floating-point registers in order to do any floating-point arithmetic, and then using VMOV instructions again at the end to copy the floating-point result back into R0 and R1.
+
+A better way is to define COMPLEX as:
+
+     typedef double COMPLEX ;
+
+That way, the compiler will use a pair of floating-point registers to pass a complex parameter and the function result can be left in S0 and S1. I.e., there is no need for any VMOV instructions!
+
+So, your assignment is to do problem 4, but use double instead of uint64_t as the container for COMPLEX. If you were to write a C program to test your functions, you could easily access the real and imaginary parts of a complex number using these two macros:
+
+     #define REAL(x) ((float *) &x)[0]
+     #define IMAG(x) ((float *) &x)[1]
+
+as in:
+
+      COMPLEX a ;
+
+      REAL(a) = 3.5 ;
+      IMAG(a) = -5.2 ;
+
+      printf("a(real,imag) = (%f, %f)\n", REAL(a), IMAG(a)) ;
+
+ Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.

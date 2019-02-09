@@ -1,0 +1,9 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+You are expected to have read all of chapters 1 and 2 BEFORE the first day of class. Given the small size of the book (6"x9") and the 12 point type, those 30 pages won't take long to read.
+ 
+You should then try to solve most of the problems at the end of chapter 2 by no later than the end of the first week of classes. At a minimum, do problems 1-14, 17, and 18. Problems 10, 13, 14, 17 and 18 may require a little more thought, but are not terribly difficult. Problems 15 and 16 require generalizing the algorithms so that they can be applied to number systems other than binary. 
+  
+Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.
+ 
+If you have time, problems 19-23 are for those of you who enjoy programming. Implementing (and thoroughly testing) the algorithms of chapter 2 as computer programs is one of the best ways to be sure that you have a clear understanding of how the algorithms work.

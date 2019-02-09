@@ -1,0 +1,7 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+Read all of Chapter 6. 
+
+Do problem 4 (all parts) and only the assembly language part of problem 5. In prob 4d, you can specify a character constant in assembly the same way you would in C or C++.
+
+Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.

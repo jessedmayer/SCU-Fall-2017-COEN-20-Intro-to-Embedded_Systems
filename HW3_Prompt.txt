@@ -1,0 +1,5 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+Read all of Chapter 4. Do problems 2-4 and only the assembly language part of problem 7 at the end of Chapter 4. 
+
+Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.

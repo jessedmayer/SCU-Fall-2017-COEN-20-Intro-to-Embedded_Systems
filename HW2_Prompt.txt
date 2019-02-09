@@ -1,0 +1,15 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+Read all of Chapter 3. Do problems 1 through 4 at the end of Chapter 3.
+
+Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.
+
+Notes:
+
+(1) Problems 1b and 2b require the passed parameter to be the address of a variable rather than its content (value). Unfortunately, Chapter 3 doesn't cover how to do this. To get the address of a variable, use the ADR instruction:
+
+ADR   R0,x   // R0 <-- &x
+
+(2) You will probably find problems 4b - 4e to be very challenging. Just remember that if you are writing a function in assembly that calls another function, you must PUSH the link register (LR) at entry and POP it before the return. Also remember that registers R0 - R3 may be destroyed by the call to the other function. In this case, you may need to copy one or more values into registers R4 - R11 where they will be preserved, but you will need to preserve the content of any such registers you use by adding them to the register lists in the PUSH and POP instructions.
+
+Feel free to ask questions - I'd be happy to walk you through some of this.

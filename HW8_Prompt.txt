@@ -1,0 +1,11 @@
+Textbook problems from ARM Assembly for Embedded Applications 3rd edition, by Daniel W. Lewis
+
+Read all of Chapter 10.
+
+Do problems 1, 2, 3 and 5.  
+
+Notes:
+
+Problems 3 and 5: Submit only the C functions; do NOT submit the main programs.
+
+Write your problem solutions using a word processor and upload the document as a .txt, .doc, .docx, or .pdf file to Camino no later than the posted deadline. Do NOT submit a scan of handwritten work - it will not be accepted. Solutions will be posted on Camino after class.
